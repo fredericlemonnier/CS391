@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frederic-Lemonnier</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            padding: 20px;
+            margin-bottom: 0;
+
+        }
+        h2{
+            text-align:center;
+            font-size: 24px;
+            padding: 30px  ;
+            margin-left: 2em;
+        }
+        .aboutMe{
+            font-size: 15px;
+            padding-left: 15px ;
+            margin-left: 2em;
+        }
+        h3{
+            text-align: center;
+            padding-left: 30px;
+            font-size: 24px;
+            margin-left: 2em;
+        }
+        .me{
+            align-content: center;
+            width: 50%;
+            display: block;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            text-align: left;
+            overflow: hidden;
+        }
+        .navBar li{
+            float: left;
+            width: 100%;
+
+        }
+
+        .navBar a{
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navBar:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (min-width: 750px){
+            .navBar{
+                position: fixed;
+                width: 30%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+            }
+            .navBar li{
+                width: auto;
+                float: none;
+            }
+            .navBar a{
+                text-align: left;
+            }
+            .main{
+                margin-left: 30%;
+                padding: 20px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+        <h1> Welcome to Frederic Lemonnier's Resume!</h1>
+        <nav>
+            <ul class="navBar">
+                <li><a href="frederic-resume-home.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+
+
+            </ul>
+
+        </nav>
+
+        <img src="images/WIN_20240125_18_02_35_Pro.jpg" class="me">
+        <h3>My Online Resume</h3>
+
+
+        <h2> About Me
+            <p class="aboutMe">I am a student at Boston University</p>
+            <p class="aboutMe">I will graduate in May 2024 with a Bachelor's degree in Computer Science</p>
+            <p class="aboutMe">I love backpacking and skiing</p>
+            <p class="aboutMe">I am passionate about Machine Learning</p>
+        </h2>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            text-align: left;
+            overflow: hidden;
+        }
+        .navBar li{
+            float: left;
+            width: 100%;
+
+        }
+
+        .navBar a{
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navBar:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (min-width: 750px){
+            .navBar{
+                position: fixed;
+                width: 30%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+            }
+            .navBar li{
+                width: auto;
+                float: none;
+            }
+            .navBar a{
+                text-align: left;
+            }
+            .main{
+                margin-left: 30%;
+                padding: 20px;
+                text-align: center;
+                align-content: center;
+            }
+            .terrier{
+                height: 30%;
+                width: 50%;
+            }
+
+        }
+        .main{
+
+            text-align: center;
+            align-content: center;
+        }
+        .terrier{
+            height: 30%;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navBar">
+            <li><a href="frederic-resume-home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+
+
+        </ul>
+
+    </nav>
+    <div class="main">
+
+        <h1>My Education History</h1>
+        <img src="images/BostonUniversity-Terriers.jpg" class="terrier">
+        <p>I will be graduating from The Boston University with a Bachelor of Arts in Computer Science</p>
+
+        <img src="images/download.png" class="dragon">
+        <p>I am also a proud member of the El Carmelo Dragons, class of 2012</p>
+    </div>
+
+</body>
+</html>

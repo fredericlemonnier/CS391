@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            text-align: left;
+            overflow: hidden;
+        }
+        .navBar li{
+            float: left;
+            width: 100%;
+
+        }
+
+        .navBar a{
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navBar:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (min-width: 750px){
+            .navBar{
+                position: fixed;
+                width: 30%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+            }
+            .navBar li{
+                width: auto;
+                float: none;
+            }
+            .navBar a{
+                text-align: left;
+            }
+            .main{
+                margin-left: 30%;
+                padding: 20px;
+            }
+            h1{
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            .main ul{
+                text-align: center;
+                padding: 0;
+                list-style-position: inside;
+                margin:auto 0;
+            }
+            .main li{
+                text-align: left;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navBar">
+            <li><a href="frederic-resume-home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+
+
+        </ul>
+
+    </nav>
+    <div class="main">
+        <h1>My Technical Experience</h1>
+        <ul>
+            <li>Analyzed 100+ complex TV ad serving logs, pinpointing the root causes of existing issues.</li>
+            <li>Designed and implemented parsing and abstraction algorithms in Go, automating the detection of ad serving
+                issues, such as blank impressions and incorrect exchange log formatting.</li>
+            <li>Utilized concurrent processing techniques to efficiently download and parse logs from AWS S3, resulting in
+                95% reduction in issue resolution time.</li>
+            <li>Successfully launched the log parsing tool, now adopted across multiple teams, dramatically improving TV
+                ad delivery by rapidly identifying critical and common issues.</li>
+            <li>Conducted comprehensive research to identify front-end bottlenecks in the TV auditing process.</li>
+            <li>Designed a solution using GraphQL scripts to directly interact with and modify the backend, bypassing
+                time-consuming front-end procedures.</li>
+            <li>Created a user-friendly terminal-based tool with an intuitive UI, allowing users to effortlessly select specific
+                TVs and ads for testing, streamlining the process and reducing complexity.</li>
+            <li>Engineered a Python script seamlessly integrated into the tool, automating the auditing process through the
+                use of the GraphQL scripts.</li>
+            <li>Successfully deployed and demoed the tool, empowering the testing team to expedite the audit of new ad
+                campaigns, resulting in improved efficiency and precision in campaign testing and validation.</li>
+            <li>Took part in an 8-person team practicing an Agile workflow.</li>
+
+        </ul>
+    </div>
+
+
+</body>
+</html>

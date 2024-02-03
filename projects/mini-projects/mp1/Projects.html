@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            text-align: left;
+            overflow: hidden;
+        }
+        .navBar li{
+            float: left;
+            width: 100%;
+
+        }
+
+        .navBar a{
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navBar:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (min-width: 750px){
+            .navBar{
+                position: fixed;
+                width: 30%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+            }
+            .navBar li{
+                width: auto;
+                float: none;
+            }
+            .navBar a{
+                text-align: left;
+            }
+
+
+        }
+        .main{
+            margin-left: 30%;
+            text-align: center;
+            align-content: center;
+            padding-top: 30px;
+        }
+
+        .frogulator{
+            background-color: #77dd77;
+            padding: 20px;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            padding-top: 60px;
+        }
+
+        .frogulator label, .frogulator input, .frogulator .buttons{
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        .eye {
+            position: absolute;
+            width: 70px; /* Size of the eye */
+            height: 70px;
+            background-color: white;
+
+            border-radius: 50%;
+            top: 10%; /* Position from the top inside the frogulator */
+        }
+
+        #left-eye {
+            left: 5%; /* Position from the left inside the frogulator */
+        }
+
+        #right-eye {
+            right: 5%; /* Position from the right inside the frogulator */
+        }
+
+        .pupil {
+            position: absolute;
+            width: 20px; /* Size of the pupil */
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input{
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .buttons button{
+            background-color: #558b2f;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .buttons{
+            position: absolute;
+            bottom: 100px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        #result{
+            color: #fff;
+            margin-top: 20px;
+
+        }
+        .tongue{
+            background-color: #ff69b4;
+            width: 80%;
+            height: 100px;
+            border: 3px solid #77dd77;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            bottom: -10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="navBar">
+            <li><a href="frederic-resume-home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+
+
+        </ul>
+
+    </nav>
+    <div class="main">
+        <h1>Some Projects</h1>
+
+        <h2>FROGULATOR</h2>
+        <div class="frogulator">
+            <label for="num1"> First Number </label><input id="num1">
+            <label for="num2"> Second Number </label><input id="num2">
+            <div class="buttons">
+                <button onclick="calculator('+')">+</button>
+                <button onclick="calculator('-')">-</button>
+                <button onclick="calculator('/')">/</button>
+                <button onclick="calculator('*')">*</button>
+                <button onclick="calculator('**')">**</button>
+            </div>
+            <div class="eye" id="left-eye">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye" id="right-eye">
+                <div class="pupil"></div>
+            </div>
+
+            <div class="tongue">
+                <h2 id="result"></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+</html>
