@@ -6,6 +6,15 @@ function calculator(func){
     let tongue= document.querySelector('.tongue')
     n2 = Number(n2);
     n1 = Number(n1);
+
+    if( func === 'c'){
+        n1.value = '';
+        n2.value = '';
+        output.innerHTML = '';
+        tongue.style.display= 'none'
+        return;
+    }
+
     if (func === '+'){
         out = n1 + n2;
     } else if(func === '-'){
@@ -27,7 +36,16 @@ function calculator(func){
         }
 
     }
-    let strOut = out.toString();
-    tongue.style.display = 'flex'
-    output.innerHTML= strOut;
+    if(out < 0){
+        let strOut = out.toString();
+        tongue.style.display = 'flex';
+        output.style.color = 'red';
+        output.innerHTML= strOut;
+    }
+    else{
+        let strOut = out.toString();
+        tongue.style.display = 'flex';
+        output.innerHTML= strOut;
+    }
+
 }

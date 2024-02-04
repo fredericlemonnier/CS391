@@ -5,6 +5,71 @@
     <title>Credits</title>
     <style>
 
+        .navBar{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            text-align: left;
+            overflow: hidden;
+        }
+        .navBar li{
+            float: left;
+            width: 100%;
+
+        }
+
+        .navBar a{
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navBar:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (min-width: 750px){
+            .navBar{
+                position: fixed;
+                width: 30%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+            }
+            .navBar li{
+                width: auto;
+                float: none;
+            }
+            .navBar a{
+                text-align: left;
+            }
+            h1{
+                font-size: 32px;
+                text-align: center;
+                padding-left: 30%;
+            }
+            p{
+                font-size: 18px;
+                text-align: center;
+                padding-top: 20px;
+                padding-left: 30%;
+            }
+
+
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+        }
 
 
 
@@ -12,6 +77,29 @@
     </style>
 </head>
 <body>
+
+
+    <nav>
+        <ul class="navBar">
+            <li><a href="frederic-resume-home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+
+
+        </ul>
+
+    </nav>
+    <div class="main">
+        <h1>Credits</h1>
+        <p>All Credit to myself.</p>
+    </div>
+
+
+
+
 
 </body>
 </html>
