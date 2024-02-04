@@ -8,10 +8,8 @@ function calculator(func){
     n1 = Number(n1);
 
     if( func === 'c'){
-        n1.value = '';
-        n2.value = '';
-        output.innerHTML = '';
         tongue.style.display= 'none'
+        window.location.reload()
         return;
     }
 
